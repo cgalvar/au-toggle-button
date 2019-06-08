@@ -1,0 +1,10 @@
+<template class="${checked? 'checked' : ''} ${disabled? 'disabled' : ''}">
+
+    <require from="./toggle-button.css"></require>
+
+    <input type="checkbox" disabled.bind="disabled" checked.bind="checked" change.delegate="change($event)">
+
+    <span id = 'toggle-button-circle'></span>
+    
+
+</template>

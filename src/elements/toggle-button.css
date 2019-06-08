@@ -1,0 +1,49 @@
+toggle-button{
+display: inline-flex;
+    height: 1em;
+    width: 2.5em;
+    margin: .5rem;
+    border-radius: 1em;
+    background: #e4e4e4;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    transition: .3s all;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+
+toggle-button.disabled #toggle-button-circle{
+    background: #e4e4e4;
+}
+
+toggle-button.checked{
+    background: #68AECA;
+}
+
+toggle-button.disabled{
+    background: #e4e4e4;
+}
+
+#toggle-button-circle{
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: #52add0;
+    border-radius: 50%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.45);
+    transition: .3s all;
+}
+
+toggle-button input{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+toggle-button.checked #toggle-button-circle{
+    transform: translateX(100%);
+}
