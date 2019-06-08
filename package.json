@@ -1,6 +1,6 @@
 {
-  "name": "au-toggle-button",
-  "description": "An Aurelia plugin project.",
+  "name": "@cgalvar/au-toggle-button",
+  "description": "A simple toggle button for aurelia",
   "version": "0.1.0",
   "repository": {
     "type": "???",
